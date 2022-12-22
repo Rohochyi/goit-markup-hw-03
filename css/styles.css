@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --first-color: #2e2f42;
   --second-color: #ffffff;
@@ -8,9 +14,30 @@
   --click-color: #404bbf;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
 .site-body {
   font-family: "Roboto", sans-serif;
   background-color: var(--second-color);
+}
+
+.container {
+  width: 1158px;
+  padding: 0 12px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
 }
 
 .visually-hidden {
@@ -27,11 +54,19 @@
 }
 
 .list {
+  margin: 0;
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+  display: inline-block;
+}
+
+.header {
+  border-bottom: 1px solid var(--acent-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-link {
@@ -76,9 +111,12 @@
 
 .hero {
   background: var(--first-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 64px;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
@@ -97,11 +135,29 @@
   color: var(--second-color);
   background: var(--brand-color);
   cursor: pointer;
+
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: 1px solid transparent;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--click-color);
+}
+
+.work {
+  padding-bottom: 120px;
+}
+.team {
+  padding: 120px 0;
+}
+
+.feature {
+  padding: 120px 0;
+}
+
+.feature-item {
 }
 
 .feature-tile {
@@ -125,6 +181,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  padding-bottom: 72px;
 }
 
 .team {
@@ -138,10 +195,15 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  margin-bottom: 72px;
 }
 
 .team-item {
   background: var(--second-color);
+}
+
+.team-image {
+  margin-bottom: 32px;
 }
 
 .team-name {
@@ -151,6 +213,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -162,12 +225,16 @@
 }
 
 .btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   color: var(--brand-color);
   background: var(--lith-color);
+  border: 1px solid var(--acent-color);
   cursor: pointer;
 }
 
@@ -175,6 +242,7 @@
 .btn:focus {
   color: var(--second-color);
   background: var(--brand-color);
+  border-color: var(--brand-color);
 }
 
 .portfolio-item {
@@ -183,6 +251,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -193,6 +262,7 @@
 
 .footer {
   background: var(--first-color);
+  padding-top: 100px;
 }
 
 .footer-logo {
@@ -203,6 +273,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--lith-color);
+  margin-bottom: 16px;
 }
 
 .footer-text {
