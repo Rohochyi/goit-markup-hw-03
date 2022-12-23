@@ -35,9 +35,8 @@ ul {
 
 .container {
   width: 1158px;
-  padding: 0 12px;
+  padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid tomato;
 }
 
 .visually-hidden {
@@ -69,6 +68,16 @@ ul {
   padding-bottom: 24px;
 }
 
+.header > .container {
+  display: flex;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-link {
   font-weight: 600;
   font-size: 16px;
@@ -94,6 +103,14 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
+  margin-right: 76px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
 }
 
 .first-leters {
@@ -136,8 +153,9 @@ ul {
   background: var(--brand-color);
   cursor: pointer;
 
+  min-width: 169px;
+  min-height: 56px;
   border-radius: 4px;
-  padding: 16px 32px;
   border: 1px solid transparent;
 }
 
@@ -157,7 +175,13 @@ ul {
   padding: 120px 0;
 }
 
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .feature-item {
+  width: 264px;
 }
 
 .feature-tile {
@@ -167,11 +191,18 @@ ul {
   letter-spacing: 0.02em;
   color: var(--first-color);
 }
+
 .feature-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+}
+
+.work-list {
+  display: flex;
+  gap: 24px;
 }
 
 .work-title {
@@ -198,8 +229,17 @@ ul {
   margin-bottom: 72px;
 }
 
+.team-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  border-radius: 4px;
+}
+
 .team-item {
   background: var(--second-color);
+  border-radius: 4px;
 }
 
 .team-image {
@@ -222,6 +262,15 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-bottom: 32px;
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding: 96px 0 72px;
 }
 
 .btn {
@@ -244,19 +293,40 @@ ul {
   background: var(--click-color);
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio-list:nth-child(3n) {
+  margin-left: 0px;
+}
+
 .portfolio-item {
+  width: 360px;
+  border: 1px solid var(--acent-color);
+  margin-bottom: 42px;
+}
+
+.portfolio-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  padding-top: 32px;
+  padding-left: 16px;
   margin-bottom: 8px;
 }
+
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 .footer {
@@ -276,8 +346,10 @@ ul {
 }
 
 .footer-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--acent-color);
+  padding-bottom: 100px;
 }
