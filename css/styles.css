@@ -49,7 +49,7 @@ ul {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -241,8 +241,7 @@ ul {
 .btn:hover,
 .btn:focus {
   color: var(--second-color);
-  background: var(--brand-color);
-  border-color: var(--brand-color);
+  background: var(--click-color);
 }
 
 .portfolio-item {
