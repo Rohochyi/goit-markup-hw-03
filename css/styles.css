@@ -35,6 +35,7 @@ ul {
 
 .container {
   width: 1158px;
+  height: auto;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -66,6 +67,11 @@ ul {
   border-bottom: 1px solid var(--acent-color);
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header > .container {
@@ -129,10 +135,11 @@ ul {
 .hero {
   background: var(--first-color);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
-  padding-top: 188px;
   margin-bottom: 64px;
   font-weight: 600;
   font-size: 56px;
@@ -153,11 +160,11 @@ ul {
   background: var(--brand-color);
   cursor: pointer;
 
+  padding: 16px 32px;
   min-width: 169px;
   min-height: 56px;
   border-radius: 4px;
   border: 1px solid transparent;
-  margin-bottom: 188px;
 }
 
 .hero-btn:hover,
@@ -191,6 +198,7 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  margin-bottom: 8px;
 }
 
 .feature-text {
@@ -213,7 +221,7 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--first-color);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team {
@@ -266,12 +274,17 @@ ul {
   padding-bottom: 32px;
 }
 
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 .filter-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 24px;
-  padding: 96px 0 72px;
+  margin-bottom: 72px;
 }
 
 .btn {
@@ -300,14 +313,18 @@ ul {
   justify-content: space-between;
 }
 
-.portfolio-list:nth-child(3n) {
-  margin-left: 0px;
-}
-
 .portfolio-item {
   width: 360px;
   border: 1px solid var(--acent-color);
-  margin-bottom: 42px;
+  margin-bottom: 48px;
+}
+
+.portfolio-item:nth-child(n + 7) {
+  margin-bottom: 0;
+}
+
+.portfolio-picture {
+  margin-bottom: 32px;
 }
 
 .portfolio-title {
@@ -316,8 +333,6 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--first-color);
-  padding-top: 32px;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -326,13 +341,13 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  padding-left: 16px;
   padding-bottom: 32px;
 }
 
 .footer {
   background: var(--first-color);
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -352,5 +367,4 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--acent-color);
-  padding-bottom: 100px;
 }
