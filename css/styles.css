@@ -100,7 +100,7 @@ ul {
 .header-email:focus {
   color: var(--brand-color);
 }
-.current{
+.current {
   color: var(--brand-color);
 }
 
