@@ -76,6 +76,7 @@ ul {
 
 .header > .container {
   display: flex;
+  height: auto;
 }
 
 .header-list {
@@ -111,7 +112,9 @@ ul {
   line-height: 1.33px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--first-color);
+  width: auto;
+  height: auto;
   margin-right: 76px;
 }
 
@@ -337,6 +340,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--first-color);
   margin-bottom: 8px;
+  padding-left: 16px;
 }
 
 .portfolio-text {
@@ -345,6 +349,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--text-color);
   padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .footer {
@@ -361,7 +366,9 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--lith-color);
-  margin-bottom: 16px;
+  width: auto;
+  height: auto;
+  margin: 0px 0px 16px 0;
 }
 
 .footer-text {
