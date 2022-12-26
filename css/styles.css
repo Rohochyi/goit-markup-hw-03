@@ -65,13 +65,14 @@ ul {
 
 .header {
   border-bottom: 1px solid var(--acent-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+}
+
+.header-nav {
+  display: flex;
 }
 
 .navigation {
   display: flex;
-  align-items: center;
 }
 
 .header > .container {
@@ -83,6 +84,9 @@ ul {
   display: flex;
   align-items: center;
   gap: 40px;
+  width: 294px;
+  height: auto;
+  margin-left: 0;
 }
 
 .header-link {
@@ -91,6 +95,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--first-color);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-link:hover,
@@ -123,6 +130,7 @@ ul {
   align-items: center;
   margin-left: auto;
   gap: 40px;
+
 }
 
 .first-leters {
@@ -136,6 +144,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .hero {
