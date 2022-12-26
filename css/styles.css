@@ -84,7 +84,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 40px;
-  width: 294px;
+  width: 146px;
   height: auto;
   margin-left: 0;
 }
@@ -162,6 +162,7 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-color);
+  height: auto;
 }
 
 .hero-btn {
