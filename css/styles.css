@@ -155,7 +155,10 @@ ul {
 }
 
 .hero-title {
+  width: 496px;
   margin-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 600;
   font-size: 56px;
   line-height: 1.07;
